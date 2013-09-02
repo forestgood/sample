@@ -1,0 +1,9 @@
+<% provide(:title, 'Posts') %>
+<li>
+  <span class="content"><%= micropost.title %></span>
+  <span class="content"><%= micropost.content %></span>
+  <span class="content"><%= micropost.tech_content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+  </span>
+</li>

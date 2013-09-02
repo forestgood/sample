@@ -1,0 +1,10 @@
+<% provide(:title, @current_post.title) %>
+<h2><%= @current_post.title %><h2>
+
+<li>
+  <span class="content"><%= @current_post.content %></span></br>
+  <span class="content"><%= @current_post.tech_content %></span></br>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(@current_post.created_at) %> ago.
+  </span>
+</li>
