@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
 
   def feed
     # This is preliminary. See "Following users" for the full implementation.
-    Micropost.all("user_id = ?", id)
+    Micropost.all(@user_id)
   end
 
   private

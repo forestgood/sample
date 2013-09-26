@@ -21,6 +21,7 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
+    @micropost = current_user.microposts.find_by_id(params[:id])
     @micropost.destroy
     redirect_to root_url
   end
