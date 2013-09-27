@@ -1,7 +1,6 @@
 <li id="<%= feed_item.id %>">
   <h3><span class="content"><%= feed_item.title.html_safe %></span></h3>
   <span class="content"><%= feed_item.content.html_safe %></span>
-  <span class="content"><%= feed_item.tech_content.html_safe %></span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span>
