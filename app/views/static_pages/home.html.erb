@@ -2,7 +2,6 @@
 <% if signed_in? %>
 	<div class="row">
 		<aside class="span4">
-			
 			<section>
 				<%= render 'shared/micropost_form' %>
 			</section>
@@ -10,12 +9,12 @@
 	</div>
 <% else %>
 <%= render 'shared/google_analytics' %>
+<center>
 <div>
 	<%= image_tag("emptysuit2.png", alt: "logo") %>
-
 </div>
+</center>
 	<div class="span8">
-	      
 	      <%= render 'shared/feed' %>
 	    </div>
 	</div>
