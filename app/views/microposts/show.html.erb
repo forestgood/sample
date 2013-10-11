@@ -1,10 +1,17 @@
 <% provide(:title, @current_post.title) %>
-<h2><%= @current_post.title %><h2>
-
-<li>
-  <span class="content"><%= @current_post.content %></span></br>
-  <span class="content"><%= @current_post.tech_content %></span></br>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(@current_post.created_at) %> ago.
-  </span>
-</li>
+<div class="span12">
+  <li id="<%= @current_post.id %>">
+  <h3><span class="content"><%= @current_post.title.html_safe %></span></h3>
+  <aside class="span6">
+      <section>
+          <span class="content"><%= @current_post.content.html_safe %></span>
+          <span class="timestamp">
+            Posted <%= time_ago_in_words(@current_post.created_at) %> ago.
+          </span>
+        </li>
+      </section>
+      <section>
+          <span class="content"><%= @current_post.tech_content.html_safe %></span>
+      </section>
+  </aside>
+</div>
