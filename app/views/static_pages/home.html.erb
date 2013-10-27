@@ -9,16 +9,30 @@
 			</aside>
 		</div>
 	<% else %>
-	
-		<center>
-		<div>
-			<%= image_tag("emptysuit2.png", alt: "logo") %>
+	<div class="header">
+		<div class="header-in">
+			<center>
+			<div>	
+			<div "parent-test">
+				<div class="test">
+					<%= image_tag("emptysuit2.png", alt: "logo") %>
+					<h1 class="tagline">From an empty suit to a full pursuit</h1>
+					<div class="read">
+						<a href="#read">View latest post</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		</center>
-		<div class="span8">
-		      <%= render 'shared/feed' %>
-	    </div>
+			</center>
+		</div>
 	</div>
+		<div><a name="read"></a>
+			<div class="container">
+				<div class="span8">
+				      <%= render 'shared/feed' %>
+			    </div>
+    		</div>
+		</div>
 	<% end %>
 
 

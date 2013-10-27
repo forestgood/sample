@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 section {
@@ -189,6 +189,7 @@ input {
 }
 .content {
   display: block;
+  padding-top:20px;
 }
 .timestamp {
   color: $grayLight;
@@ -202,4 +203,21 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+/* front end tweaks */
+
+.wrapper                                    { width:100%}
+.header                                     { width:100%; background:#231f20;} 
+.header-in                                  { width:1000px; height:738px; background:url(../assets/header-bg.png) no-repeat left center; margin:0 auto;} 
+.tagline                                    { color:#FFF}
+.parent-test {
+  position:relative;
+}
+.test {position:absolute; margin-top:10em; padding-left:5em}
+.read                                   { width:177px; float:right; margin:30px 60px 0 0;} 
+.read a                                 { text-align:center; background:#FFF; color:#000; font-size:17px;  font-family: 'ProximaNovaRegular'; padding:13px 25px; border-radius:5px; position:relative; } 
+.read:hover{opacity:0.8;} 
+.page-wrapper { 
+padding-top: 50px;
 }
