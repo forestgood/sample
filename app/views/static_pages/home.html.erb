@@ -1,39 +1,42 @@
+			<% if signed_in? %>
+			<div class="row">
+				<aside class="span4">
+					<section>
 
-
-	<% if signed_in? %>
-		<div class="row">
-			<aside class="span4">
-				<section>
-					<%= render 'shared/micropost_form' %>
-				</section>
-			</aside>
-		</div>
-	<% else %>
-	<div class="header">
-		<div class="header-in">
-			<center>
-			<div>	
-			<div "parent-test">
-				<div class="test">
-					<%= image_tag("emptysuit2.png", alt: "logo") %>
-					<h1 class="tagline">From an empty suit to a full pursuit</h1>
-					<div class="read">
-						<a href="#read">View latest post</a>
+						<div class="page-wrapper">
+					
+								<%= render 'shared/micropost_form' %>
+						</div>
+					</section>
+				</aside>
+			</div>
+		<% else %>
+		<div class="header">
+			<div class="header-in">
+				<center>
+				<div>	
+				<div "parent-test">
+					<div class="test">
+						<%= image_tag("emptysuit2.png", alt: "logo") %>
+						<h1 class="tagline">From an empty suit to a full pursuit</h1>
+						<div class="read">
+							<a href="#read">View latest post</a>
+						</div>
 					</div>
 				</div>
 			</div>
+				</center>
+			</div>
 		</div>
-			</center>
-		</div>
-	</div>
-		<div><a name="read"></a>
-			<div class="container">
-				<div class="span8">
-				      <%= render 'shared/feed' %>
-			    </div>
-    		</div>
-		</div>
-	<% end %>
+			<div><a name="read"></a>
+				<div class="container">
+					<div class="span8">
+					      <%= render 'shared/feed' %>
+				    </div>
+	    		</div>
+			</div>
+		<% end %>
+
 
 
 

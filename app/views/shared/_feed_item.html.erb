@@ -6,7 +6,10 @@
   <% end %>
   <aside class="span8">
       <section>
-          <span class="content"><%= feed_item.content.html_safe%>
+          <span class="content"><%= (truncate_html(feed_item.content, 600," ")).html_safe %>
+          </span>
+          <span class="read-more">
+            <%= link_to "Read more", feed_item %>
           </span>
           
           <span class="timestamp">
