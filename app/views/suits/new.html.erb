@@ -1,0 +1,40 @@
+<% provide(:title, 'FullSuits') %>
+<div class="page-wrapper">
+	<div class="container">
+		<h1>Share your story</h1>
+		<div>
+			<p>Your story just might inspire an empty suit to follow suit</p>
+		</div>
+
+		<div class="row">
+		  <div class="span6 offset3">
+		    <%= form_for @suit, :url => suits_path, :html => { :multipart => true } do |f| %>
+
+		      <%= f.label :email %><div><em>Your email will not be shared with anyone</em></div>
+		      <%= f.text_field :email %>
+
+		      <%= f.label :name %><div><em>First name only if you would like to be anonymous</em></div>
+		      <%= f.text_field :name %>
+
+		      <%= f.label :age %>
+		      <%= f.text_field :age %>
+
+		      <%= f.label :location %>
+		      <%= f.text_field :location %>
+
+		      <%= f.label :website %>
+		      <%= f.text_field :website %>
+
+		      <%= f.label :story %>
+		      <%= f.text_field :story %>
+
+		      <%= f.label :photo %><div><em>Leave blank to be anonymous</em></div>
+		      <%= f.file_field :avatar %>
+		      <br>
+
+		      <%= f.submit "Submit Suit", class: "btn btn-large btn-primary" %>
+		    <% end %>
+		  </div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+
+<div class="page-wrapper">
+	<div class="container">
+		<div class="row">
+					<div>
+						<h1><%= @suit.name %></h1>
+						<br>
+						<%= image_tag @suit.avatar.url(:medium) %>
+						<br>
+						<ul>
+							<li><strong>Age:</strong> <%= @suit.age %></li>
+							<li><strong>Location:</strong> <%= @suit.location %></li>
+							<li><strong>Website:</strong> <%= link_to @suit.website, "http://"+@suit.website, :target => "_blank" %></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="content"><%= @suit.story %></span>
+					</div>
+					<br>
+
+					<div class="fb-comments" data-href="https://emptysu.it/suits/<%= @suit.id %>" data-colorscheme="light" data-numposts="5" data-width="The pixel width of the plugin">
+    				</div>
+		</div>
+	</div>
+</div>

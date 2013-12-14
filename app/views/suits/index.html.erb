@@ -1,0 +1,20 @@
+<div class="page-wrapper">
+	<div class="container">
+		<h1>Full Suits</h1>
+		<div>
+			<p>Hang up your suit on the wall and share how you went from Empty Suit to Full Persuit.  <%= link_to "Share your story", new_suit_path %></p>
+		</div>
+		<div class="suits-container">
+			<div class="row">
+	
+					  <% @suits.each do |suit| %>
+					    <center><%= render suit %></center>
+					  <% end %>
+			  	
+			 </div>	 
+		 </div>
+		 <br>
+		 <br>
+		
+	</div>
+</div>

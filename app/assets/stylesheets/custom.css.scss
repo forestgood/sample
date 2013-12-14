@@ -87,6 +87,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  padding-right: 100px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
@@ -222,3 +223,14 @@ aside {
 padding-top: 50px;
 }
 .read-more { float:right;}
+
+.suits-container {
+  padding-top: 5em;
+}
+
+.suits {
+  height: 307px;
+  margin-right: auto;
+  margin-left: auto;
+
+}

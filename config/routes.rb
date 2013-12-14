@@ -1,7 +1,10 @@
 Sample::Application.routes.draw do
+  get "suits/new"
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts
+  resources :suits
   root to: 'static_pages#home'
 
   match 'signup', to: 'users#new'
