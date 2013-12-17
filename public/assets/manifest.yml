@@ -1,4 +1,6 @@
 ---
+bowtie.png: bowtie-cf1021c85138b3e2216925ba3baf900e.png
+bowtie/index.png: bowtie-cf1021c85138b3e2216925ba3baf900e.png
 emptylogo.png: emptylogo-36e8b8b118cceeaa81d25ce18d6c049b.png
 emptylogo/index.png: emptylogo-36e8b8b118cceeaa81d25ce18d6c049b.png
 emptysuit1.png: emptysuit1-8943a91afc44d45cc9f3f3e79bc76d81.png
@@ -7,10 +9,10 @@ emptysuit2.png: emptysuit2-b94dbd2e6c22612f195732555f9a282d.png
 emptysuit2/index.png: emptysuit2-b94dbd2e6c22612f195732555f9a282d.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-92b3b2de9d4c83c14cf1428f6e4e9fc4.js
-application/index.js: application-92b3b2de9d4c83c14cf1428f6e4e9fc4.js
-application.css: application-cdd67f99ce9bab1788f2af90a8b2a003.css
-application/index.css: application-cdd67f99ce9bab1788f2af90a8b2a003.css
+application.js: application-9972fdbfcd9152fdd4a38f2b44e1ae51.js
+application/index.js: application-9972fdbfcd9152fdd4a38f2b44e1ae51.js
+application.css: application-3f87e5bc6558893e1f0405c4eeb331a8.css
+application/index.css: application-3f87e5bc6558893e1f0405c4eeb331a8.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
