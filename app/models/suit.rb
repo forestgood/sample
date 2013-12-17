@@ -1,5 +1,5 @@
 class Suit < ActiveRecord::Base
-  attr_accessible :age, :location, :name, :avatar, :story, :website, :email
+  attr_accessible :age, :location, :name, :avatar, :story, :website, :email, :quote
   before_save { |suit| suit.email = email.downcase }
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" },
   					:url => "/assets/images/:id/:style/:basename.:extension",

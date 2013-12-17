@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131214204650) do
+ActiveRecord::Schema.define(:version => 20131217185550) do
 
   create_table "comments", :force => true do |t|
     t.string   "title",            :limit => 50, :default => ""
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20131214204650) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "email"
+    t.text     "quote"
   end
 
   add_index "suits", ["email"], :name => "index_suits_on_email", :unique => true

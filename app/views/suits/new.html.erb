@@ -16,6 +16,9 @@
 		      <%= f.label :name %><div><em>First name only if you would like to be anonymous</em></div>
 		      <%= f.text_field :name %>
 
+		      <%= f.label :quote %><div><em>Enter your favorite quote. (ie. "Fortune favors the brave" -Alexander the Great)</em></div>
+		      <%= f.text_field :quote %>
+
 		      <%= f.label :age %>
 		      <%= f.text_field :age %>
 
@@ -26,7 +29,7 @@
 		      <%= f.text_field :website %>
 
 		      <%= f.label :story %>
-		      <%= f.text_field :story %>
+		      <%= f.text_field(:story, class: 'mystyle', :input_html => { :rows => 3 }) %>
 
 		      <%= f.label :photo %><div><em>Leave blank to be anonymous</em></div>
 		      <%= f.file_field :avatar %>

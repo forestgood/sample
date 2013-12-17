@@ -164,6 +164,15 @@ input {
   height: auto !important;
 }
 
+input.mystyle {
+   height: 10em !important;
+   display:block !important;
+   vertical-align: top !important;
+
+
+}
+
+
 
 #error_explanation {
   color: #f00;
